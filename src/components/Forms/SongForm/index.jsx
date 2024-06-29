@@ -45,7 +45,7 @@ const SongForm = () => {
 		artist: Joi.string().required().label("Artist"),
 		img: Joi.string().required().label("Image"),
 		song: Joi.string().required().label("Song"),
-		duration: Joi.number().required(),
+		duration: Joi.number(),
 	};
 
 	const handleInputState = (name, value) => {

@@ -61,7 +61,7 @@ const UserForm = () => {
 	const schema = {
 		email: Joi.string().email({ tlds: false }).required().label("Email"),
 		password: passwordComplexity().required().label("Password"),
-		name: Joi.string().min(3).max(10).required().label("Name"),
+		name: Joi.string().min(3).max(20).required().label("Name"),
 	};
 
 	useEffect(() => {
