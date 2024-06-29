@@ -80,7 +80,7 @@ const UserForm = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (Object.keys(errors).length === 0) {
+		// if (Object.keys(errors).length === 0) {
 			if (id !== "new") {
 				const res = await updateUser(id, data, dispatch);
 				res && history.push("/users");
@@ -88,9 +88,9 @@ const UserForm = () => {
 				const res = await createUser(data, dispatch);
 				res && history.push("/users");
 			}
-		} else {
-			console.log("please fill out properly");
-		}
+		// } else {
+		// 	console.log("please fill out properly");
+		// }
 	};
 
 	return (
